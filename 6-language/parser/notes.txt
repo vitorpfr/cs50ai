@@ -1,0 +1,27 @@
+best starting point so far:
+(passes 10 and common traps described in text)
+
+S -> NP VP
+NP -> N | Det N | AP N
+AP -> Adj | Adj AP | Det AP
+VP -> V | V NP | V NP PP PP | V PP
+PP -> P NP
+
+
+
+intermediate point (worked on all but 7-8: need to add Adv:)
+
+S -> NP VP | S Conj S | S Conj VP
+NP -> N | Det N | AP N
+AP -> Adj | Adj AP | Det AP
+VP -> V | V NP | V NP PP | V PP
+PP -> P NP | PP PP
+
+
+final answer:
+
+S -> NP VP | S Conj S | S Conj VP | S P S
+NP -> N | Det N | AP N
+AP -> Adj | Adj AP | Det AP
+VP -> V | V NP | V NP PP | V PP | Adv VP | VP Adv
+PP -> P NP | PP PP
